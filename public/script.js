@@ -2,15 +2,17 @@ let canvas = document.querySelector("#canvas");
 
 let { top: canvasTop } = canvas.getBoundingClientRect();
 
-canvas.height = window.innerHeight - canvasTop;
+canvas.height = window.innerHeight - canvasTop - 5;
 canvas.width = window.innerWidth;
 
 window.addEventListener("resize", function () {
-  canvas.height = window.innerHeight - canvasTop;
+  canvas.height = window.innerHeight - canvasTop - 5;
   canvas.width = window.innerWidth;
 });
 
 let ctx = canvas.getContext("2d");
+ctx.lineCap = "round";
+
 let isMouseDown = false;
 
 canvas.addEventListener("mousedown", function (e) {
