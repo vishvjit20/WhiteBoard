@@ -9,9 +9,10 @@ function createWindow() {
     },
   });
 
-  mainWindow.loadFile("index.html").then(function () {
+  mainWindow.loadFile("public/index.html").then(function () {
     mainWindow.webContents.openDevTools();
     mainWindow.maximize();
+    mainWindow.removeMenu();
   });
 }
 
