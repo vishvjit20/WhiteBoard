@@ -5,8 +5,29 @@
 }
 
 .tools-content {
-  background-color: lightcyan;
+  background-color: #ffffff;
   height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tools {
+  background-color: lightblue;
+  border-radius: 10px;
+  height: 80%;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tool {
+  height: 80%;
+}
+
+.tool img {
+  height: 100%;
 }
 
 .canvas-content {
@@ -16,5 +37,4 @@
 }
 
 #canvas {
-  background: lightblue;
 }
