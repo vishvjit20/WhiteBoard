@@ -2,18 +2,29 @@ let stickyDiv = document.querySelector("#sticky");
 
 stickyDiv.addEventListener("click", appendSticky);
 
-function appendSticky() {
+function appendSticky(el) {
   let sticky = document.createElement("div");
   sticky.classList.add("sticky");
-  sticky.innerHTML = `
+  if (el) {
+    sticky.innerHTML = `
     <div class="sticky-header">
         <div class="minimize"></div>
         <div class="close"></div>
     </div>
-    <div class="sticky-content">
-        <textarea cols="30" rows="10"></textarea>
-    </div>
-    `;
+    <div class="sticky-content">    
+    </div>`;
+    sticky.querySelector(".sticky-content").append(el);
+  } else {
+    sticky.innerHTML = `
+        <div class="sticky-header">
+            <div class="minimize"></div>
+            <div class="close"></div>
+        </div>
+        <div class="sticky-content">
+            <textarea cols="30" rows="10"></textarea>
+        </div>
+        `;
+  }
 
   let stickyHeader = sticky.querySelector(".sticky-header");
   let isStickyHold = false;

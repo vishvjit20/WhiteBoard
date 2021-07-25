@@ -182,3 +182,8 @@ textarea {
   border: none;
   padding: 10px;
 }
+
+.image-upload {
+  height: 100%;
+  width: 100%;
+}
