@@ -139,3 +139,46 @@
 .active {
   transform: scale(1.2);
 }
+
+.sticky {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 150px;
+  width: 200px;
+}
+
+.sticky-header {
+  height: 15%;
+  background-color: coral;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sticky-header div {
+  height: 70%;
+  width: 8%;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.minimize {
+  background-color: aqua;
+}
+
+.close {
+  background-color: bisque;
+}
+
+.sticky-content {
+  height: 85%;
+}
+
+textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px;
+}

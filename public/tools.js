@@ -34,6 +34,8 @@ eraserSizeInput.addEventListener("change", function () {
 });
 
 pencil.addEventListener("click", function () {
+  pencil.classList.add("active");
+  eraser.classList.remove("active");
   if (activeTool == "pencil") {
     // pencil options
     if (pencilOptions.classList.contains("hide")) {
@@ -47,11 +49,11 @@ pencil.addEventListener("click", function () {
     eraserOptions.classList.add("hide");
     ctx.lineWidth = currentPencilSize;
   }
-  pencil.classList.add("active");
-  eraser.classList.remove("active");
 });
 
 eraser.addEventListener("click", function () {
+  eraser.classList.add("active");
+  pencil.classList.remove("active");
   if (activeTool == "eraser") {
     // eraser options
     if (eraserOptions.classList.contains("hide")) {
@@ -62,9 +64,7 @@ eraser.addEventListener("click", function () {
   } else {
     activeTool = "eraser";
     ctx.strokeStyle = "white";
-    pencilOptions.classList.add("hide");
     ctx.lineWidth = currentEraserSize;
+    pencilOptions.classList.add("hide");
   }
-  eraser.classList.add("active");
-  pencil.classList.remove("active");
 });
