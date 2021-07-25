@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WhiteBoard</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <div class="tools-content">
@@ -18,7 +14,7 @@
           <img src="../Icons/Black_Pencil.svg" alt="" />
           <div class="tool-options hide">
             <div class="pencil-size">
-              <input type="range" value="1" min="1" max="40" />
+              <input class="slider" type="range" value="1" min="1" max="40" />
             </div>
             <div class="pencil-colors">
               <div class="red"></div>
@@ -33,7 +29,7 @@
           <img src="../Icons/Eraser.svg" alt="" />
           <div class="tool-options hide">
             <div class="eraser-size">
-              <input type="range" value="1" min="1" max="40" />
+              <input class="slider" type="range" value="1" min="1" max="40" />
             </div>
           </div>
         </div>
@@ -55,5 +51,6 @@
     </div>
     <script src="script.js"></script>
     <script src="tools.js"></script>
+    <script src="undoRedo.js"></script>
   </body>
 </html>

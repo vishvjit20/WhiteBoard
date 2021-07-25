@@ -47,6 +47,8 @@ pencil.addEventListener("click", function () {
     eraserOptions.classList.add("hide");
     ctx.lineWidth = currentPencilSize;
   }
+  pencil.classList.add("active");
+  eraser.classList.remove("active");
 });
 
 eraser.addEventListener("click", function () {
@@ -63,4 +65,6 @@ eraser.addEventListener("click", function () {
     pencilOptions.classList.add("hide");
     ctx.lineWidth = currentEraserSize;
   }
+  eraser.classList.add("active");
+  pencil.classList.remove("active");
 });
