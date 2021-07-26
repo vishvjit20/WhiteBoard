@@ -57,5 +57,5 @@ canvas.addEventListener("mouseup", function (e) {
   isMouseDown = false;
   db.push(line);
   line = [];
-  console.log(db);
+  // console.log(db);
 });

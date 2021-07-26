@@ -1,22 +1,21 @@
-let photo = document.querySelector("#photo");
+// let photo = document.querySelector("#photo");
+// let photoInput = document.querySelector("#photo-upload");
 let download = document.querySelector("#download");
-let photoInput = document.querySelector("#photo-upload");
 
-photo.addEventListener("click", function () {
-  photoInput.click();
-});
+// photo.addEventListener("click", function () {
+//   photoInput.click();
+// });
 
-photoInput.addEventListener("change", function (e) {
-  let fileObject = e.currentTarget.files[0];
+// photoInput.addEventListener("change", function (e) {
+//   let fileObject = e.currentTarget.files[0];
 
-  let imageUrl = URL.createObjectURL(fileObject);
-  //   console.log(imageUrl);
-
-  let img = document.createElement("img");
-  img.src = imageUrl;
-  img.classList.add("image-upload");
-  appendSticky(img);
-});
+//   imageUrl = URL.createObjectURL(fileObject);
+//   let base_img = new Image();
+//   base_img.addEventListener("load", function () {
+//     ctx.drawImage(base_img, 0, 0, canvas.width, canvas.height);
+//   });
+//   base_img.src = imageUrl;
+// });
 
 download.addEventListener("click", function () {
   let canvasUrl = canvas.toDataURL({ type: "image/png" });

@@ -10,27 +10,31 @@
   <body>
     <div class="tools-content">
       <div class="tools">
-        <div class="tool" id="pencil">
-          <img src="../Icons/Black_Pencil.svg" alt="" />
-          <div class="tool-options hide">
-            <div class="pencil-size">
-              <input class="slider" type="range" value="1" min="1" max="40" />
-            </div>
-            <div class="pencil-colors">
-              <div class="red"></div>
-              <div class="yellow"></div>
-              <div class="blue"></div>
-              <div class="green"></div>
-              <div class="black"></div>
-            </div>
+        <div class="pencil-wrapper">
+          <div class="tool" id="pencil">
+            <img src="../Icons/Black_Pencil.svg" alt="" />
+          </div>
+          <div class="pencil-colors">
+            <div class="red"></div>
+            <div class="yellow"></div>
+            <div class="blue"></div>
+            <div class="green"></div>
+            <div class="black active"></div>
+          </div>
+          <div class="pencil-size">
+            <div class="p-s active">-</div>
+            <div class="p-s">*</div>
+            <div class="p-s">+</div>
           </div>
         </div>
-        <div class="tool" id="eraser">
-          <img src="../Icons/Eraser.svg" alt="" />
-          <div class="tool-options hide">
-            <div class="eraser-size">
-              <input class="slider" type="range" value="1" min="1" max="40" />
-            </div>
+        <div class="eraser-wrapper">
+          <div class="tool" id="eraser">
+            <img src="../Icons/Eraser.svg" alt="" />
+          </div>
+          <div class="eraser-size">
+            <div class="e-s">-</div>
+            <div class="e-s">*</div>
+            <div class="e-s">+</div>
           </div>
         </div>
         <div class="tool" id="undo"><img src="../Icons/Undo.svg" alt="" /></div>
@@ -38,10 +42,10 @@
         <div class="tool" id="sticky">
           <img src="../Icons/StickyNote.svg" />
         </div>
-        <div class="tool" id="photo">
+        <!-- <div class="tool" id="photo">
           <img src="../Icons/Photo.svg" alt="" />
           <input type="file" id="photo-upload" class="hide" />
-        </div>
+        </div> -->
         <div class="tool" id="download">
           <img src="../Icons/Download.svg" alt="" />
         </div>
